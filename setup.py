@@ -9,4 +9,8 @@ setup(name='ud-toolkit',
       license='GPL',
       packages=['udtk'],
       test_suite='nose.collector',
-      tests_require=['nose'])
+      tests_require=['nose'],
+      install_requires=[
+          'ufal.udpipe==1.2.*',
+          'tqdm'
+      ])

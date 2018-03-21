@@ -38,3 +38,74 @@ For more advanced usage, you can use `Model.process()`:
 >>> [(w.lemma, w.xpostag) for w in m.process(s, tag=True)]
 [('time', 'NN'), ('flie', 'VBZ'), ('like', 'IN'), ('a', 'DT'), ('arrow', 'NN'), ('.', '.'), ('fruit', 'NN'), ('fly', 'VBZ'), ('like', 'IN'), ('a', 'DT'), ('banana', 'NN'), ('.', '.')]
 ```
+
+# Supported languages
+
+- ancient_greek
+- ancient_greek-proiel
+- arabic
+- basque
+- belarusian
+- bulgarian
+- catalan
+- chinese
+- coptic
+- croatian
+- czech
+- czech-cac
+- czech-cltt
+- danish
+- dutch
+- dutch-lassysmall
+- english
+- english-lines
+- english-partut
+- estonian
+- finnish
+- finnish-ftb
+- french
+- french-partut
+- french-sequoia
+- galician
+- galician-treegal
+- german
+- gothic
+- greek
+- hebrew
+- hindi
+- hungarian
+- indonesian
+- irish
+- italian
+- japanese
+- kazakh
+- korean
+- latin
+- latin-ittb
+- latin-proiel
+- latvian
+- lithuanian
+- norwegian-bokmaal
+- norwegian-nynorsk
+- old_church_slavonic
+- persian
+- polish
+- portuguese
+- portuguese-br
+- romanian
+- russian
+- russian-syntagrus
+- sanskrit
+- slovak
+- slovenian
+- slovenian-sst
+- spanish
+- spanish-ancora
+- swedish
+- swedish-lines
+- tamil
+- turkish
+- ukrainian
+- urdu
+- uyghur
+- vietnamese

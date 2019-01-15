@@ -1,5 +1,3 @@
-from functools import reduce
-
 import ufal.udpipe
 
 class UDPipeError(Exception):

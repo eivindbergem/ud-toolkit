@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='ud-toolkit',
-      version='0.0.1',
+      version='0.0.2',
       description='NLP toolkit built around UDPipe.',
       url='http://github.com/eivindbergem/ud-toolkit',
       author='Eivind Alexander Bergem',

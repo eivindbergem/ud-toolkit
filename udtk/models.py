@@ -104,6 +104,6 @@ class Model:
 
     @ensure_model_loaded
     def process(self, text, fn = lambda w : w, **kwargs):
-        pipeline = Pipeline(self.model, "text", **kwargs)
+        pipeline = Pipeline("text", model=self.model, **kwargs)
 
         return [fn(w) for w in iter_words(pipeline.process(text))]

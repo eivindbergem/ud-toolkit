@@ -1,3 +1,5 @@
+import os
+
 from pathlib import Path
 from functools import wraps
 
@@ -25,7 +27,6 @@ LANGUAGES = set(["ancient_greek-proiel", "ancient_greek", "arabic",
 
 UD_VERSION = "2.0-170801"
 MODELS_URL = "https://github.com/eivindbergem/UD-2.0-models/raw/master/"
-MODEL_CACHE = Path.home() / ".udpipe-models"
 
 def get_model_cache_path():
     return MODEL_CACHE
@@ -33,6 +34,14 @@ def get_model_cache_path():
 def set_model_cache_path(path):
     global MODEL_CACHE
     MODEL_CACHE = path
+
+def init_model_cache_path():
+    try:
+        set_model_cache_path(Path(os.environ['UDTK_PATH']))
+    except KeyError:
+        set_model_cache_path(Path.home() / ".udpipe-models")
+
+init_model_cache_path()
 
 class UnknownLanguageError(Exception):
     def __init__(self, language):
